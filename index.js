@@ -91,6 +91,97 @@ console.log(minEight(10));
 
 let add = 0;
 function mutFive(){
-    add += 5
+    add = add + 5
 }
-console.log(add)
+console.log(add);
+
+let changed = 0;
+function change(num){
+    return (num + 5)/ 3;
+}
+changed = change(10);
+console.log(changed);
+
+let liver = 0;
+function liverpool(num){
+    return (num - 8)/7
+}
+liver = liverpool(1);
+console.log(liver);
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    return arr.shift();
+}
+
+let testArr = [1, 2, 3, 4, 5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+function betterDaysAhead(aheadOf) {
+    if(aheadOf){
+        return "Better Days Approaching"
+    }return "Better Days Faded"
+}
+console.log(betterDaysAhead(false));
+
+function barCelona(val){
+    if(val == 50){
+        return "Fifty"
+    }return "Dey Play"
+}
+console.log(barCelona())
+
+function realMadrid(num){
+    if(num === 20){
+        return "twenty"
+    }return "Gettat"
+}
+console.log(realMadrid("20"))
+
+function comPare(a, b){
+    if(a === b){
+        return "true"
+    }return "Big Wiz"
+}
+console.log(comPare(10, "10"))
+
+function nutEqual(num){
+    if(num != "Messi"){
+        return "Not a GOAT!"
+    }return "GOOOAT!"
+}
+console.log(nutEqual("Messi"))
+
+function noGreeEqual(digit){
+    if(digit !== 35){
+        return "Dont Play!"
+    }return "Dey Play"
+}
+console.log(noGreeEqual(35));
+
+function highOnHigh(num){
+    if(num > 50){
+        return "Fifty Cent"
+    }if(num > 20){
+        return "Tylaa"
+    }return "Portable"  
+}
+console.log(highOnHigh(10));
+
+function highEqualToHigh(val){
+    if(val >= 30){
+        return "Machala"
+    }if(val >= 20){
+        return "Baba nla"
+    }return "Big Daddy"
+}
+console.log(highEqualToHigh(10))
+
+function andTesting(val){
+    if(val <= 40 && val >= 30){
+        return "Alfa Jeje"
+    }return "Sherifdeen"
+}
+console.log(andTesting(10))
