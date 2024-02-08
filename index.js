@@ -238,10 +238,116 @@ function elseIfElseIf(num) {
     result = "greater than Hundred";
   } else if (num < 100) {
     result = "Less than Hundred";
-  }else if(num > 50){
+  } else if (num > 50) {
     result = "less than 50";
-  }else{
-    result = "Small"
+  } else {
+    result = "Small";
   }
   return result;
-}console.log(elseIfElseIf(40));
+}
+console.log(elseIfElseIf(40));
+
+function jcUwajehChukwuma(val) {
+  if (val < 5) {
+    return "Tiny";
+  } else if (val < 10) {
+    return "small";
+  } else if (val < 15) {
+    return "Medium";
+  } else if (val < 20) {
+    return "Large";
+  } else {
+    return "HUge";
+  }
+}
+console.log(jcUwajehChukwuma(100));
+
+function mazeedCaseInSwitch(val) {
+  let answer = "";
+  switch (val) {
+    case 1:
+      answer = "Mazeed";
+      break;
+    case 2:
+      answer = "Dara";
+      break;
+    case 3:
+      answer = "Posi";
+      break;
+    case 4:
+      answer = "Basit";
+  }
+  return answer;
+}
+console.log(mazeedCaseInSwitch(4));
+
+function rodiaAgba(num) {
+  let answer = "";
+  switch (num) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Kiki";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Ijeoma";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "Jomiloju";
+      break;
+  }
+  return answer;
+}
+console.log(rodiaAgba(7));
+
+let londonTailor = {
+  occupation: "Tailor",
+  major: "Law",
+  year: 37,
+};
+let occValue = londonTailor.occupation;
+let majorValue = londonTailor.major;
+console.log(occValue);
+console.log(majorValue);
+
+let naiJa = {
+  "south africa": "Two Zero",
+  "The asia": "seven up",
+  "The africa": "Extreme end",
+};
+
+let southValue = naiJa["Two Zero"];
+let asiaValue = naiJa["Seven up"];
+console.log(southValue);
+
+let mySecret = {
+  car:{
+    inside:{
+      "car Type":  "Benz",
+      "passenger seat": "Front",
+    },
+    outside:{
+      material: "Lace"
+    },
+  },
+};
+let mySecretMaterials = mySecret.car.inside["car Type"];
+console.log(mySecretMaterials);
+
+let myTools = [
+  {
+    type: "corel",
+    list:["Beizer", "Pen", "Polygon"],
+  },
+  {
+    type: "illustator",
+    list:["clone", "mask", "mesh"],
+  },
+];
+
+let myToolsBox = myTools[1].list[2];
+console.log(myToolsBox);
