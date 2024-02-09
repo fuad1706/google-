@@ -351,3 +351,22 @@ let myTools = [
 
 let myToolsBox = myTools[1].list[2];
 console.log(myToolsBox);
+
+// let myArr = [];
+// let i = 0;
+// while (i < 4){
+  // myArr.push(i);
+  // i++
+// }
+// console.log(myArr);
+
+let myArrs = [];
+let i = 0;
+while (i < 7){
+  myArrs.push(i);
+  i++
+}
+console.log(myArrs);
+
+let my
+
